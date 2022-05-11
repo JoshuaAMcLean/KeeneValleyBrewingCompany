@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+            <title>Keene Valley Brewing Company | great beer — great food — great people</title>
+            <meta charset="UTF-8" />
+            <link   href="includes/style.css"
+                    type="text/css"
+                    rel="stylesheet" />
+            
+<!-- Google Fonts links -->            
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,900;1,900&family=Special+Elite&display=swap"
+                  rel="stylesheet">
+            
+<!-- End fonts links -->
+            
+    </head>
+        
+    <body>
+            
+        <header>
+                
+            <div id="HeaderLogo">
+                <img src="images/logo.png"
+                        alt="KVBC Logo"
+                        id="LogoImg"/>
+                
+                <h1 id="topLogoText">Keene Valley<br>Brewing Company</h1>
+            </div>
+                
+            <div>
+               <nav>
+                  <li><a href="menu.html" class="NavLinks">our menu</a></li>
+                  <li><a href="_" class="NavLinks">what's on tap</a></li>
+               </nav>
+            </div>
+                
+            <p class="button1" id="HeaderButton">make a reservation</p>
+            
+            <div class="Banner">
+                <h2 class="BannerText">NEW THIS WEEK: Indian Head IPA</h2>
+            </div>
+            
+        </header>
+        
+        <section id="HeroSlider">
+            
+            <div class="slideshow-container">
+
+            <div class="mySlides fade">
+            <img src="images/fireside_beer.jpg" style="height:800px; width:auto; margin:auto;">
+            </div>
+
+            <div class="mySlides fade">
+            <img src="images/food_and_drink.jpg" style="height:800px; width:auto; margin:auto;" >
+            </div>
+
+            <div class="mySlides fade">
+            <img src="images/bottle.jpg" style="height:800px; width:auto; margin:auto;" >
+            </div>
+
+            </div>
+            
+            <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length)
+              {slideIndex = 1;}    
+              
+              slides[slideIndex-1].style.display = "block";  
+              setTimeout(showSlides, 5000); // Change image every 5 seconds
+            }
+            </script>
+        </section>
+        
+        <section id="AboutUs">
+            <div class="TwoColumn">
+                <h3>We were born &amp; raised in the mountains</h3>
+                <p>Our founders, Ryan Barleyson and Beer McBeery, grew up in the small mountain town of Keene, New York. After long days spent rock climbing, hiking, or skiing, there's nothing the boys love more than relaxing with a delicious beer. In 2008, the pair brewed their first beer, which they named for famed Adirondack photographer Seneca Ray Stoddard. Since then, our lineup has grown to include over a dozen seasonally-rotating brews, all carefully crafted and named for the people and places that make the Adirondack Park so unique.</p>
+            </div>
+            <div class="TwoColumn">
+                <img src="images/founders.jpg" alt="Keene Valley Brewing Company founders Ryan Barleyson (l) and Beer McBeery enjoying a craft beer on our patio" title="Our Founders" class="ReSize" id="founderImage" />
+            </div>
+        </section>
+
+        <footer>
+            
+            <div class="Banner">
+                <h2 class="BannerText">great beer — great food — great people</h2>
+            </div>
+                
+                <section id="FooterColumns">
+                    <div class="FourColumn">
+                        <h1>Follow Us</h1>
+                        <hr style="height:4px; color: #F8F7EC; background-color: #F8F7EC;">
+                    </div>
+                    <div class="FourColumn">
+                        <h1>Find Us</h1>
+                        <hr style="height:4px; color: #F8F7EC; background-color: #F8F7EC;">
+                    </div>
+                    <div class="FourColumn">
+                        <h1>Map Placeholder</h1>
+                        <hr style="height:4px; color: #F8F7EC; background-color: #F8F7EC;">
+                    </div>
+                    <div class="FourColumn">
+                        <h1>Stop By</h1>
+                        <hr style="height:4px; color: #F8F7EC; background-color: #F8F7EC;">
+                    </div>
+                </section>
+        </footer>
+            
+    </body>
+        
+</html>
